@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1 class="h1">Hello</h1>
+    <button class="hide">Hide</button>
+    <button class="show">Show</button>
+    <button class="toggle">Toggle</button>
+</body>
+<script>
+    $(document).ready(function(){
+        $(".hide").click(function(){
+            $(".h1").hide(1000);
+        })
+        $(".show").click(function(){
+            $(".h1").show(1000);
+        })
+        $(".toggle").click(function(){
+            $(".h1").toggle(1000);
+        })
+    })
+</script>
+</html>
